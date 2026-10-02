@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mi Cuenta - RENOR</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="header-container">
+    <div class="logo-container">
+      <img src="imagenes/logo.png" alt="Logo RENOR" class="logo-img">
+      <div class="logo-text"><h1 id="bienvenida">Mi Cuenta</h1></div>
+    </div>
+    <div style="display:flex;gap:.6rem;">
+      <a class="btn-cuenta" href="index.html">Ir al sitio</a>
+      <button class="btn-cuenta" id="btn-logout">Cerrar Sesión</button>
+    </div>
+  </div>
+</header>
+
+<section class="panel-section">
+  <div class="form-card" style="max-width:600px;">
+    <h2 style="margin-bottom:1rem;color:#ff5555;">Solicitar Cotización</h2>
+    <div class="msg error" id="error-box"></div>
+    <div class="msg ok" id="ok-box"></div>
+    <form id="form-cotizar">
+      <div class="field">
+        <label>Tipo de Resistencia</label>
+        <select id="tipo-resistencia">
+          <option>Resistencia de Cartucho</option>
+          <option>Resistencia Tubular</option>
+          <option>Resistencia de Inmersión</option>
+          <option>Banda / Cerámica</option>
+          <option>Resistencia de Mica</option>
+          <option>Diseño Personalizado</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Especificaciones (Diámetro, Largo, Volts, Watts)</label>
+        <textarea id="specs" rows="3" required></textarea>
+      </div>
+      <div class="field">
+        <label>Método de Pago</label>
+        <select id="metodo-pago">
+          <option>Transferencia bancaria </option>
+          <option>Acudir a sucursal (Personal)</option>
+        </select>
+      </div>
+      <button class="btn-cotizar" type="submit">Enviar Solicitud</button>
+    </form>
+  </div>
+
+  <h2 style="text-align:center;color:#ff5555;margin:2rem 0 1rem;">Mis Cotizaciones</h2>
+  <table>
+    <thead><tr><th>Folio</th><th>Tipo</th><th>Especificaciones</th><th>Estatus</th><th>Precio</th></tr></thead>
+    <tbody id="tabla"></tbody>
+  </table>
+</section>
+
+<script src="js/cliente.js"></script>
+</body>
+</html>

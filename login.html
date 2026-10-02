@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ingresar - RENOR</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="header-container">
+    <div class="logo-container">
+      <img src="imagenes/logo.png" alt="Logo RENOR" class="logo-img">
+      <div class="logo-text"><h1>RENOR</h1></div>
+    </div>
+    <a class="btn-cuenta" href="index.html">← Volver al sitio</a>
+  </div>
+</header>
+
+<div class="form-card">
+  <div class="tabs">
+    <div class="tab active" data-tab="ingresar">Ingresar</div>
+    <div class="tab" data-tab="registrarse">Registrarse</div>
+    <div class="tab" data-tab="recuperar">Recuperar</div>
+  </div>
+
+  <div class="msg error" id="error-box"></div>
+  <div class="msg ok" id="ok-box"></div>
+
+  <form id="form-login">
+    <div class="field"><label>Correo</label><input type="email" id="login-email" required></div>
+    <div class="field"><label>Contraseña</label><input type="password" id="login-password" required></div>
+    <button class="btn-cotizar" type="submit">Entrar</button>
+  </form>
+
+  <form id="form-registro" class="hidden">
+    <div class="field"><label>Nombre completo</label><input type="text" id="reg-name" required></div>
+    <div class="field"><label>Correo</label><input type="email" id="reg-email" required></div>
+    <div class="field"><label>Teléfono</label><input type="tel" id="reg-phone" required></div>
+    <div class="field"><label>Contraseña</label><input type="password" id="reg-password" required>
+      <small style="color:#999;">Mínimo 6 caracteres.</small>
+    </div>
+    <div class="field"><label>Pregunta de recuperación (elige una que solo tú sepas responder)</label>
+      <input type="text" id="reg-question" placeholder="Ej. ¿Nombre de tu primera mascota?" required>
+    </div>
+    <div class="field"><label>Respuesta</label><input type="text" id="reg-answer" required></div>
+    <button class="btn-cotizar" type="submit">Crear cuenta</button>
+  </form>
+
+  <form id="form-recover-1">
+    <div class="field"><label>Correo de tu cuenta</label><input type="email" id="rec-email" required></div>
+    <button class="btn-cotizar" type="submit">Continuar</button>
+  </form>
+
+  <form id="form-recover-2" class="hidden">
+    <div class="field"><label id="rec-question-label">Pregunta de recuperación</label>
+      <input type="text" id="rec-answer" required>
+    </div>
+    <button class="btn-cotizar" type="submit">Verificar</button>
+  </form>
+
+  <form id="form-recover-3" class="hidden">
+    <div class="field"><label>Nueva contraseña</label><input type="password" id="rec-new-password" required>
+      <small style="color:#999;">Mínimo 6 caracteres.</small>
+    </div>
+    <button class="btn-cotizar" type="submit">Guardar nueva contraseña</button>
+  </form>
+</div>
+
+<script src="js/auth.js"></script>
+</body>
+</html>

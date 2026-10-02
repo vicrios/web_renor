@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "role": "admin",
+    "created_at": "2026-09-11T21:42:46.324Z",
+    "name": "Administrador",
+    "email": "admin@renor.com",
+    "phone": "",
+    "password_hash": "$2a$10$Awxhh7e38IU59NOjcsMN0.MBZnZY3jUZtOVGvxVS50aX9oH4rmEC6"
+  },
+  {
+    "id": 2,
+    "role": "cliente",
+    "created_at": "2026-09-18T02:08:54.456Z",
+    "name": "Victoria Banda",
+    "email": "vict30@gmail.com",
+    "phone": "8120135315",
+    "password_hash": "$2a$10$8PNCig.9HWMqh6helwDE4OGfNN.AzsTah83BH5Jl95T4gFo.cFZPC",
+    "security_question": "quien soy",
+    "security_answer_hash": "$2a$10$fwHF8uw2et3tSHbY/S5IpuIgEhebjR7l0m7lC3GdgvjGMj6v00Bny",
+    "reset_token": "f720f23fe108be3667c855cb9b9b611b4286b5ff",
+    "reset_token_expires": "2026-10-02T04:00:05.175Z"
+  },
+  {
+    "id": 3,
+    "role": "cliente",
+    "created_at": "2026-09-18T06:40:21.716Z",
+    "name": "Victoria ",
+    "email": "victoriabandardz30@gmail.com",
+    "phone": "8187771615",
+    "password_hash": "$2a$10$NHjCK8OsivonqlHjPF5YVeYW9bSu5kGVM7GhAO24PuWt8698a6yYW",
+    "security_question": "Fruta favorita",
+    "security_answer_hash": "$2a$10$cCaab39LhlZjr2LNb.ePduEBXaU3Hd5tsXprTBghe/WTu6ZpiDwGi"
+  }
+]
